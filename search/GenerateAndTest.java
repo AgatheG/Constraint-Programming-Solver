@@ -251,26 +251,4 @@ public class GenerateAndTest {
 		return new Csp(vars,contr,"");
 	}
 
-	//TEST 
-	public static void main(String[] args) {
-		Variable x1 = new Variable("x1",1,0,2);
-		Variable x2 = new Variable("x2",2,0,2);
-		Variable x3 = new Variable("x3",3,0,2);
-
-		Constraint c1 = new Constraint(x1,x2,"<");
-		Constraint c2 = new Constraint(x1,x3,"!=");
-
-		ArrayList<Variable> vars = new ArrayList<Variable>();
-		vars.add(x1); vars.add(x2); vars.add(x3);
-
-		ArrayList<Constraint> contraintes = new ArrayList<Constraint>();
-		contraintes.add(c1); contraintes.add(c2);
-
-		Csp csp = new Csp(vars, contraintes, "");
-		GenerateAndTest gat = new GenerateAndTest();
-
-		gat.bruteForceSearchNoFilter(csp);
-		gat.print(false);
-	}
-
 }
