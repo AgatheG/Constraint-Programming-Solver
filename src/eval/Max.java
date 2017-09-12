@@ -1,5 +1,7 @@
 package definition;
 
+import definition.Constraint;
+import definition.Variable;
 
 // extends Constraint to offer a new type of constraint where var3 = max(vr1, var2)
 
