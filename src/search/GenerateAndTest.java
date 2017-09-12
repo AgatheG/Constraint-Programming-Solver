@@ -79,10 +79,10 @@ public class GenerateAndTest {
 	 * @param - If set to true, displays each solution (= a list of variables with their value)
 	 */
 	public void print(boolean display) {
-		System.out.println("Nombre de solutions : " + this.solutions.size());
-		System.out.println("Nombre de noeuds : " + this.nodes);
-		System.out.println("Nombre de backtracks : " + this.nbBacktracks);
-		System.out.println("Nombre d'erreurs : " + this.fails);
+		System.out.println("Number of solutions : " + this.solutions.size());
+		System.out.println("Number of nodes : " + this.nodes);
+		System.out.println("Number of backtracks : " + this.nbBacktracks);
+		System.out.println("Number of mistakes : " + this.fails);
 		if (display) {
 			for (int i = 0; i < this.solutions.size(); i ++) {
 				for (int j = 0; j < this.solutions.get(i).size(); j++) {
@@ -91,7 +91,7 @@ public class GenerateAndTest {
 				System.out.print("\n");
 			}
 		}
-		System.out.println("Temps écoulé : " + this.time*0.001 + "s");
+		System.out.println("Elapsed time : " + this.time*0.001 + "s");
 
 	}
 	
